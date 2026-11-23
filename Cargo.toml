@@ -3,5 +3,20 @@ name = "proxy"
 version = "0.1.0"
 edition = "2024"
 
+
 [dependencies]
 tcp-migration = { version = "0.1.0", path = "../tcp-migration" }
+
+bytes = "1.2"
+http = "1"
+http-body = "1"
+hyper = { version = "1", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+http-body-util = "0.1"
+hyper-util = { version = "0.1", features = ["full"] }
+rustls = "0.23"
+pin-project-lite = { version = "0.2.4" }
+
+
+[dev-dependencies]
+pin-project-lite = "0.2.4"
